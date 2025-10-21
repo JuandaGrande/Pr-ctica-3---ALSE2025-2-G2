@@ -37,7 +37,7 @@ class Biblioteca{
      * @param autor Autor del libro a buscar.
      * @return Puntero al libro si se encuentra, nullptr si no.
      */
-    Libro* buscarLibroTitulo(const std::string& autor);  //NOTDONE
+    Libro* buscarLibroAutor(const std::string& autor);  //NOTDONE
     private:
     /**
      * @brief Vector que almacena los libros de la biblioteca.

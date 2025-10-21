@@ -48,7 +48,7 @@ Libro* Biblioteca::buscarLibroTitulo(const std::string& titulo){
  * @return Devuelve un puntero al libro si existe y nullptr si no
  */
 
-Libro* Biblioteca::buscarLibroTitulo(const std::string& autor){
+Libro* Biblioteca::buscarLibroAutor(const std::string& autor){
     for(int i=0;i<libros.size();i++){
         if(libros[i].getAutor()==autor){
         return &libros[i];
