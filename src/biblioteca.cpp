@@ -52,8 +52,8 @@ Libro* Biblioteca::buscarLibroTitulo(const std::string& titulo){
         if(libros[i].getTitulo()==titulo){
         return &libros[i];
         }
-        else{return nullptr;}
     }
+    return nullptr;
 }
 /**
  * @brief Busca un libro por autor en la bilbioteca.
