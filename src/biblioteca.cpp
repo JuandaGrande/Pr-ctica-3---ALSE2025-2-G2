@@ -20,8 +20,14 @@ void Biblioteca::agregarLibro(const Libro& libro){
  * @brief Elimina un libro de la biblioteca.
  * @param ISBN Codigo ISBN del libro a eliminar.
  */
-void Biblioteca::eliminarLibro(const Libro& libro){
-    //Construir esto??
+bool Biblioteca::eliminarLibro(const std::string& ISBN) {
+    for (int i=0; i<libros.size();i++) {
+        if (libros[i].getISBN() == ISBN) {
+            libros.erase(libros.begin()+i);
+            return true; // Libro eliminado
+        }
+    }
+    return false; // Libro no encontrado
 }
 
 /**

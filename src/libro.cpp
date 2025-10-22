@@ -51,3 +51,12 @@ std::string Libro::getTitulo() const{
 std::string Libro::getAutor() const{
     return autor;
 }
+/**
+ * @brief Muestra el ISBN del libro
+ * @return ISBN
+ * 
+ */
+
+std::string Libro::getISBN() const{
+    return isbn;
+}

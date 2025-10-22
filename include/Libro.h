@@ -41,6 +41,12 @@ public:
      * 
      */
     std::string getAutor() const;  //Done
+    /**
+     * @brief Muestra el ISBN del libro
+     * @return ISBN
+     * 
+     */
+    std::string getISBN() const;  //Done
 
 private:
     std::string titulo;

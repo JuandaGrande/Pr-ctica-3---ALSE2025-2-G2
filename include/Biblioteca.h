@@ -23,10 +23,11 @@ class Biblioteca{
      */
     void agregarLibro(const Libro& libro); //Done
     /**
-     * @brief Elimina un libro de la biblioteca.
-     * @param ISBN ISBN del ibro a eliminar.
-     */
-    void eliminarLibro(const Libro& ISBN); //TO DO
+    * @brief Elimina un libro de la biblioteca.
+    * @param ISBN Código ISBN del libro a eliminar.
+    * @return true si se eliminó el libro, false si no se encontró.
+    */
+    bool eliminarLibro(const std::string& ISBN);
     /**
      * @brief Muestra todos los libros en la biblioteca.
      */

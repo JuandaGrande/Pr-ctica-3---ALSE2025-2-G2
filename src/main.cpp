@@ -57,15 +57,32 @@ int main() {
                 std::cout << "Libro agregado exitosamente.\n";
                 break;
             }
-            case 2: { //Eliminar Libro
-                std::cout << "Función eliminar libro no implementada aún.\n";
+            case 2: { // Eliminar libro
+                std::string isbnEliminar;
+                std::cout << "Ingrese ISBN del libro a eliminar: ";
+                std::getline(std::cin, isbnEliminar);
+
+                bool eliminado = miBiblioteca.eliminarLibro(isbnEliminar);
+                if (eliminado) {
+                    std::cout << "Libro eliminado correctamente.\n";
+                } else {
+                    std::cout << "No se encontró un libro con el ISBN dado.\n";
+                }
                 break;
             }
-            case 3: { //Buscar por título
+            case 3: { //Buscar por Título
                 std::string busqueda;
                 std::cout << "Ingrese titulo a buscar: ";
                 std::getline(std::cin, busqueda);
-                miBiblioteca.buscarLibroTitulo(busqueda);
+                std::string LibroEncontrado;
+                Libro* libroEncontrado = miBiblioteca.buscarLibroTitulo(busqueda);
+                if(libroEncontrado==nullptr){
+                    std::cout<<"No se encontró un libro con el titulo "<<busqueda<<std::endl;
+                }
+                else{
+                    std::cout << "Libro encontrado:\n";
+                    libroEncontrado->mostrarInfo();
+                }
                 break;
             }
             case 4: { //Buscar por autor
