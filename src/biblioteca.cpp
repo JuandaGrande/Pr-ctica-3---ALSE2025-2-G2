@@ -60,6 +60,7 @@ Libro* Biblioteca::buscarLibroAutor(const std::string& autor){
         if(libros[i].getAutor()==autor){
         return &libros[i];
         }
-        else{return nullptr;}
     }
+    return nullptr;
+    
 }

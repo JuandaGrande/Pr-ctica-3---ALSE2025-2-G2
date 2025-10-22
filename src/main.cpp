@@ -23,7 +23,7 @@ void mostrarMenu() {
     mostrarMarco();
     std::cout << "## 1. Agregar libro                        ##\n";
     std::cout << "## 2. Eliminar libro                       ##\n";
-    std::cout << "## 3. Buscar libro por título              ##\n";
+    std::cout << "## 3. Buscar libro por titulo              ##\n";
     std::cout << "## 4. Buscar libro por autor               ##\n";
     std::cout << "## 5. Mostrar libros disponibles           ##\n";
     std::cout << "## 6. Salir                                ##\n";
@@ -45,7 +45,7 @@ int main() {
         switch(opcion) {
             case 1: { //Agregar libro
                 std::string titulo, autor, isbn;
-                std::cout << "Ingrese título: ";
+                std::cout << "Ingrese titulo: ";
                 std::getline(std::cin, titulo);
                 std::cout << "Ingrese autor: ";
                 std::getline(std::cin, autor);
@@ -72,7 +72,15 @@ int main() {
                 std::string busqueda;
                 std::cout << "Ingrese autor a buscar: ";
                 std::getline(std::cin, busqueda);
-                miBiblioteca.buscarLibroAutor(busqueda);
+                std::string LibroEncontrado;
+                Libro* libroEncontrado = miBiblioteca.buscarLibroAutor(busqueda);
+                if(libroEncontrado==nullptr){
+                    std::cout<<"No se encontró un libro con el autor "<<busqueda<<std::endl;
+                }
+                else{
+                    std::cout << "Libro encontrado:\n";
+                    libroEncontrado->mostrarInfo();
+                }
                 break;
             }
             case 5: { // Mostrar libros disponibles
@@ -91,7 +99,7 @@ int main() {
             std::cout << "\nPresione Enter para continuar...";
             std::cin.get();
         }
-    } while (opcion != 5);
+    } while (opcion != 6);
 
     return 0;
 }
