@@ -33,7 +33,7 @@ cmake --build .
 4. Usar el menú para explorar las opciones disponibles.
 
 ## Instrucción alternativa
-1. Descargar y ejecutar el .exe en [Releases]([https://github.com/JuandaGrande/Pr-ctica-3---ALSE2025-2-G2/releases](https://github.com/JuandaGrande/Sistema-de-Gestion-de-Biblioteca/releases/latest) (Solo funciona en Windows x64)
+1. Descargar y ejecutar el .exe en [Releases](https://github.com/JuandaGrande/Sistema-de-Gestion-de-Biblioteca/releases/latest) (Solo funciona en Windows x64)
 ---
 
 ## Licencia:
