@@ -29,7 +29,7 @@ void mostrarMenu() {
     std::cout << "## 6. Salir                                ##\n";
     mostrarMarco();
     mostrarMarco();
-    std::cout << "Ingrese una opción: ";
+    std::cout << "Ingrese una opcion: ";
 }
 
 int main() {
@@ -63,7 +63,7 @@ int main() {
             }
             case 3: { //Buscar por título
                 std::string busqueda;
-                std::cout << "Ingrese título a buscar: ";
+                std::cout << "Ingrese titulo a buscar: ";
                 std::getline(std::cin, busqueda);
                 miBiblioteca.buscarLibroTitulo(busqueda);
                 break;
@@ -84,7 +84,7 @@ int main() {
                 break;
             }
             default:
-                std::cout << "Opción inválida. Intente de nuevo.\n";
+                std::cout << "Opcion inválida. Intente de nuevo.\n";
                 break;
         }
         if (opcion != 6) {
