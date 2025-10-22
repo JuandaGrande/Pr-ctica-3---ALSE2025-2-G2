@@ -13,18 +13,21 @@ void limpiarPantalla() {
 }
 
 void mostrarMarco() {
-    std::cout << "##########################################\n";
+    std::cout << "#############################################\n";
 }
 
 void mostrarMenu() {
     mostrarMarco();
-    std::cout << "#          Sistema de Biblioteca          #\n";
     mostrarMarco();
-    std::cout << "# 1. Agregar libro                        #\n";
-    std::cout << "# 2. Eliminar libro                       #\n";
-    std::cout << "# 3. Buscar libro por título o autor     #\n";
-    std::cout << "# 4. Mostrar libros disponibles           #\n";
-    std::cout << "# 5. Salir                              #\n";
+    std::cout << "##          Sistema de Biblioteca          ##\n";
+    mostrarMarco();
+    std::cout << "## 1. Agregar libro                        ##\n";
+    std::cout << "## 2. Eliminar libro                       ##\n";
+    std::cout << "## 3. Buscar libro por título              ##\n";
+    std::cout << "## 4. Buscar libro por autor               ##\n";
+    std::cout << "## 5. Mostrar libros disponibles           ##\n";
+    std::cout << "## 6. Salir                                ##\n";
+    mostrarMarco();
     mostrarMarco();
     std::cout << "Ingrese una opción: ";
 }
@@ -40,7 +43,7 @@ int main() {
         std::cin.ignore(); // para limpiar el buffer de entrada
 
         switch(opcion) {
-            case 1: {
+            case 1: { //Agregar libro
                 std::string titulo, autor, isbn;
                 std::cout << "Ingrese título: ";
                 std::getline(std::cin, titulo);
@@ -54,23 +57,29 @@ int main() {
                 std::cout << "Libro agregado exitosamente.\n";
                 break;
             }
-            case 2: {
+            case 2: { //Eliminar Libro
                 std::cout << "Función eliminar libro no implementada aún.\n";
                 break;
             }
-            case 3: {
+            case 3: { //Buscar por título
                 std::string busqueda;
-                std::cout << "Ingrese título o autor a buscar: ";
+                std::cout << "Ingrese título a buscar: ";
                 std::getline(std::cin, busqueda);
-                // Aquí podrías implementar buscar por título o autor
-                std::cout << "Función búsqueda no implementada aún.\n";
+                miBiblioteca.buscarLibroTitulo(busqueda);
                 break;
             }
-            case 4: {
+            case 4: { //Buscar por autor
+                std::string busqueda;
+                std::cout << "Ingrese autor a buscar: ";
+                std::getline(std::cin, busqueda);
+                miBiblioteca.buscarLibroAutor(busqueda);
+                break;
+            }
+            case 5: { // Mostrar libros disponibles
                 miBiblioteca.mostrarLibros();
                 break;
             }
-            case 5: {
+            case 6: { //Salir
                 std::cout << "Saliendo...\n";
                 break;
             }
@@ -78,7 +87,7 @@ int main() {
                 std::cout << "Opción inválida. Intente de nuevo.\n";
                 break;
         }
-        if (opcion != 5) {
+        if (opcion != 6) {
             std::cout << "\nPresione Enter para continuar...";
             std::cin.get();
         }

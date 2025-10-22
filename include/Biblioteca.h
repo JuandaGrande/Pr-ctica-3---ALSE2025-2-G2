@@ -26,7 +26,7 @@ class Biblioteca{
      * @brief Elimina un libro de la biblioteca.
      * @param ISBN ISBN del ibro a eliminar.
      */
-    void eliminarLibro(const Libro& ISBN); //
+    void eliminarLibro(const Libro& ISBN); //TO DO
     /**
      * @brief Muestra todos los libros en la biblioteca.
      */
@@ -42,7 +42,7 @@ class Biblioteca{
      * @param autor Autor del libro a buscar.
      * @return Puntero al libro si se encuentra, nullptr si no.
      */
-    Libro* buscarLibroAutor(const std::string& autor);  //NOTDONE
+    Libro* buscarLibroAutor(const std::string& autor);  //Done
     private:
     /**
      * @brief Vector que almacena los libros de la biblioteca.
