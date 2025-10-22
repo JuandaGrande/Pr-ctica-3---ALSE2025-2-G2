@@ -1,39 +1,40 @@
-# Práctica-3 - ALSE2025-2 G2
+# Sistema de Gestión de Biblioteca
 
-## Ejercicio 1: Sistema de Gestión de Biblioteca (versión básica)
-### 🧾 Escenario:
-Diseña un sistema simple que permita gestionar libros en una pequeña biblioteca.
+**Descripción:**  
+Este programa en C++ permite gestionar una biblioteca digital, ofreciendo funcionalidades básicas para agregar, eliminar, buscar y mostrar libros disponibles. Está diseñado para ser simple, eficiente y fácil de usar desde una interfaz de línea de comandos tipo menú.
 
-### ✅ Requisitos:
-Crear una clase Libro con atributos: titulo, autor, ISBN/SN, y disponible.
-Crear una clase Biblioteca que pueda:
-Agregar libros
-Eliminar libros
-(opcional) Buscar libros por título o autor
-Mostrar libros disponibles
-Opcional: Agregar una clase Usuario y derivar de ella Estudiante y Profesor, con diferentes límites de préstamos o privilegios.
-Estructura basica archivos por proyecto.
+---
 
-Biblioteca/
-├── CMakeLists.txt
-├── include
-│   ├── Biblioteca.h
-│   └── Libro.h
-└── src
-    ├── Biblioteca.cpp
-    ├── Libro.cpp
-    └── main.cpp
+## Funcionalidades principales:
+- **Agregar libros** con título, autor e ISBN.  
+- **Eliminar libros** por código ISBN.  
+- **Buscar libros** por título o autor (uno por autor).  
+- **Mostrar todos los libros disponibles** en la biblioteca.  
+- Interfaz de menú amigable con opciones claras y limpieza de pantalla.
 
+---
 
-## 🚗 Ejercicio 2: Sistema de Alquiler de Vehículos
-### 🧾 Escenario:
-Simula un sistema de alquiler de vehículos que gestiona autos y bicicletas.
+## Detalles técnicos:
+- Implementado en C++ con CMake para la compilación.  
+- Documentación generada con Doxygen para facilitar mantenimiento y extensión.  
+- No depende de librerías externas ni DLLs, facilitando su uso portable en sistemas Windows compatibles.  
+- Código modular con separación clara entre clases `Libro` y `Biblioteca`.
 
-### ✅ Requisitos:
-Clase base Vehiculo con atributos como marca, modelo, placa. La clase Vehiculo debe tener un método mostrarInformacion que muestre un resumen de las características del vehiculo y que pueda ser personalizado por clases deribadas.
-Clases derivadas: Auto, Bicicleta (cada una con atributos específicos, por ejemplo capacidadPasajeros para autos y metodos ).
-Clase SistemaAlquiler que permita:
-Registrar vehículos
-Alquilar y devolver vehículos
-Mostrar vehículos disponibles
-Se debe entregar un documento PDF donde se tenga el enlace  al repositorio que contenga la solución, metodología, aspectos especiales y demas consideraciones.
+---
+
+## Instrucciones de uso:
+1. Clonar o descargar el repositorio.  
+2. Compilar con CMake desde la carpeta `build`:  
+
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake --build .
+
+3. Ejecutar el archivo generado (`SistemaBiblioteca.exe` en Windows).  
+4. Usar el menú para explorar las opciones disponibles.
+
+## Instrucción alternativa
+1. Descargar y ejecutar el .exe proporcionado (Solo funciona en Windows x64)
+---
+
+## Licencia:
+Este proyecto está licenciado bajo MIT License.
