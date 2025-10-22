@@ -1,0 +1,88 @@
+#include "../include/Biblioteca.h"
+#include "../include/Libro.h"
+#include <iostream>
+#include <string>
+#include <cstdlib> // para system("clear") o system("cls")
+
+void limpiarPantalla() {
+#ifdef _WIN32
+    std::system("cls");
+#else
+    std::system("clear");
+#endif
+}
+
+void mostrarMarco() {
+    std::cout << "##########################################\n";
+}
+
+void mostrarMenu() {
+    mostrarMarco();
+    std::cout << "#          Sistema de Biblioteca          #\n";
+    mostrarMarco();
+    std::cout << "# 1. Agregar libro                        #\n";
+    std::cout << "# 2. Eliminar libro                       #\n";
+    std::cout << "# 3. Buscar libro por título o autor     #\n";
+    std::cout << "# 4. Mostrar libros disponibles           #\n";
+    std::cout << "# 5. Salir                              #\n";
+    mostrarMarco();
+    std::cout << "Ingrese una opción: ";
+}
+
+int main() {
+    Biblioteca miBiblioteca;
+    int opcion;
+
+    do {
+        limpiarPantalla();
+        mostrarMenu();
+        std::cin >> opcion;
+        std::cin.ignore(); // para limpiar el buffer de entrada
+
+        switch(opcion) {
+            case 1: {
+                std::string titulo, autor, isbn;
+                std::cout << "Ingrese título: ";
+                std::getline(std::cin, titulo);
+                std::cout << "Ingrese autor: ";
+                std::getline(std::cin, autor);
+                std::cout << "Ingrese ISBN: ";
+                std::getline(std::cin, isbn);
+
+                Libro nuevoLibro(titulo, autor, isbn);
+                miBiblioteca.agregarLibro(nuevoLibro);
+                std::cout << "Libro agregado exitosamente.\n";
+                break;
+            }
+            case 2: {
+                std::cout << "Función eliminar libro no implementada aún.\n";
+                break;
+            }
+            case 3: {
+                std::string busqueda;
+                std::cout << "Ingrese título o autor a buscar: ";
+                std::getline(std::cin, busqueda);
+                // Aquí podrías implementar buscar por título o autor
+                std::cout << "Función búsqueda no implementada aún.\n";
+                break;
+            }
+            case 4: {
+                miBiblioteca.mostrarLibros();
+                break;
+            }
+            case 5: {
+                std::cout << "Saliendo...\n";
+                break;
+            }
+            default:
+                std::cout << "Opción inválida. Intente de nuevo.\n";
+                break;
+        }
+        if (opcion != 5) {
+            std::cout << "\nPresione Enter para continuar...";
+            std::cin.get();
+        }
+    } while (opcion != 5);
+
+    return 0;
+}

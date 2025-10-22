@@ -1,0 +1,157 @@
+\doxysection{Biblioteca Class Reference}
+\hypertarget{class_biblioteca}{}\label{class_biblioteca}\index{Biblioteca@{Biblioteca}}
+
+
+Función principal bilbioteca.  
+
+
+
+
+{\ttfamily \#include $<$Biblioteca.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_biblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}{Biblioteca}} ()
+\begin{DoxyCompactList}\small\item\em Constructor para crear una biblioteca vacía. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_biblioteca_a244f7acb08d0e9a748438ae77018b013}{agregar\+Libro}} (const \mbox{\hyperlink{class_libro}{Libro}} \&libro)
+\begin{DoxyCompactList}\small\item\em Agrega un libro a la biblioteca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_biblioteca_aa32b58bc35c2cfd67406646319f9b829}{eliminar\+Libro}} (const \mbox{\hyperlink{class_libro}{Libro}} \&ISBN)
+\begin{DoxyCompactList}\small\item\em Elimina un libro de la biblioteca. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_biblioteca_a7cf49388843a6a9646d210e6c70d39ae}{mostrar\+Libros}} () const
+\begin{DoxyCompactList}\small\item\em Muestra todos los libros en la biblioteca. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_libro}{Libro}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_biblioteca_a87ccccb5585943bde0a9815ebf0da685}{buscar\+Libro\+Titulo}} (const std\+::string \&titulo)
+\begin{DoxyCompactList}\small\item\em Busca un libro por título. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_libro}{Libro}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_biblioteca_afad863bd0e82ce559eb724ceb28b01e2}{buscar\+Libro\+Autor}} (const std\+::string \&autor)
+\begin{DoxyCompactList}\small\item\em Busca un libro por autor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Función principal bilbioteca. 
+
+Esta clase almacena los libros, y permite agregar, eliminar, buscar y mostrar libros 
+
+\label{doc-constructors}
+\Hypertarget{class_biblioteca_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_biblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}\index{Biblioteca@{Biblioteca}!Biblioteca@{Biblioteca}}
+\index{Biblioteca@{Biblioteca}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{Biblioteca()}{Biblioteca()}}
+{\footnotesize\ttfamily \label{class_biblioteca_a5e12ea4e7a4edb14d210a41708fc1c10} 
+Biblioteca\+::\+Biblioteca (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor para crear una biblioteca vacía. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_biblioteca_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_biblioteca_a244f7acb08d0e9a748438ae77018b013}\index{Biblioteca@{Biblioteca}!agregarLibro@{agregarLibro}}
+\index{agregarLibro@{agregarLibro}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{agregarLibro()}{agregarLibro()}}
+{\footnotesize\ttfamily \label{class_biblioteca_a244f7acb08d0e9a748438ae77018b013} 
+void Biblioteca\+::agregar\+Libro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_libro}{Libro}} \&}]{libro}{}\end{DoxyParamCaption})}
+
+
+
+Agrega un libro a la biblioteca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em libro} & \doxylink{class_libro}{Libro} a agregar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_biblioteca_afad863bd0e82ce559eb724ceb28b01e2}\index{Biblioteca@{Biblioteca}!buscarLibroAutor@{buscarLibroAutor}}
+\index{buscarLibroAutor@{buscarLibroAutor}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscarLibroAutor()}{buscarLibroAutor()}}
+{\footnotesize\ttfamily \label{class_biblioteca_afad863bd0e82ce559eb724ceb28b01e2} 
+\mbox{\hyperlink{class_libro}{Libro}} \texorpdfstring{$\ast$}{*} Biblioteca\+::buscar\+Libro\+Autor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{autor}{}\end{DoxyParamCaption})}
+
+
+
+Busca un libro por autor. 
+
+Busca un libro por autor en la bilbioteca.
+
+
+\begin{DoxyParams}{Parameters}
+{\em autor} & Autor del libro a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al libro si se encuentra, nullptr si no.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em autor} & Autor del libro a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve un puntero al libro si existe y nullptr si no 
+\end{DoxyReturn}
+\Hypertarget{class_biblioteca_a87ccccb5585943bde0a9815ebf0da685}\index{Biblioteca@{Biblioteca}!buscarLibroTitulo@{buscarLibroTitulo}}
+\index{buscarLibroTitulo@{buscarLibroTitulo}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{buscarLibroTitulo()}{buscarLibroTitulo()}}
+{\footnotesize\ttfamily \label{class_biblioteca_a87ccccb5585943bde0a9815ebf0da685} 
+\mbox{\hyperlink{class_libro}{Libro}} \texorpdfstring{$\ast$}{*} Biblioteca\+::buscar\+Libro\+Titulo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{titulo}{}\end{DoxyParamCaption})}
+
+
+
+Busca un libro por título. 
+
+Busca un libro por titulo en la bilbioteca.
+
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Título del libro a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero al libro si se encuentra, nullptr si no.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em titulo} & Título del libro a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve un puntero al libro si existe y nullptr si no 
+\end{DoxyReturn}
+\Hypertarget{class_biblioteca_aa32b58bc35c2cfd67406646319f9b829}\index{Biblioteca@{Biblioteca}!eliminarLibro@{eliminarLibro}}
+\index{eliminarLibro@{eliminarLibro}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{eliminarLibro()}{eliminarLibro()}}
+{\footnotesize\ttfamily \label{class_biblioteca_aa32b58bc35c2cfd67406646319f9b829} 
+void Biblioteca\+::eliminar\+Libro (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_libro}{Libro}} \&}]{libro}{}\end{DoxyParamCaption})}
+
+
+
+Elimina un libro de la biblioteca. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ISBN} & ISBN del ibro a eliminar.\\
+\hline
+{\em ISBN} & Codigo ISBN del libro a eliminar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_biblioteca_a7cf49388843a6a9646d210e6c70d39ae}\index{Biblioteca@{Biblioteca}!mostrarLibros@{mostrarLibros}}
+\index{mostrarLibros@{mostrarLibros}!Biblioteca@{Biblioteca}}
+\doxysubsubsection{\texorpdfstring{mostrarLibros()}{mostrarLibros()}}
+{\footnotesize\ttfamily \label{class_biblioteca_a7cf49388843a6a9646d210e6c70d39ae} 
+void Biblioteca\+::mostrar\+Libros (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra todos los libros en la biblioteca. 
+
+Muestra los libros en la biblioteca.
+
+Utiliza el método mostrar\+Info de \doxylink{libro_8cpp}{libro.\+cpp} 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_biblioteca_8h}{Biblioteca.\+h}}\item 
+src/\mbox{\hyperlink{biblioteca_8cpp}{biblioteca.\+cpp}}\end{DoxyCompactItemize}

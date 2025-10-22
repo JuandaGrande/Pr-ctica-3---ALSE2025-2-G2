@@ -1,0 +1,24 @@
+\doxysection{Biblioteca.\+h}
+\hypertarget{_biblioteca_8h_source}{}\label{_biblioteca_8h_source}\index{include/Biblioteca.h@{include/Biblioteca.h}}
+\mbox{\hyperlink{_biblioteca_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ BIBLIOTECA\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ BIBLIOTECA\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_libro_8h}{Libro.h}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_biblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}{Biblioteca}}\{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{class_biblioteca_a5e12ea4e7a4edb14d210a41708fc1c10}{Biblioteca}}();\ \textcolor{comment}{//Done}}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_biblioteca_a244f7acb08d0e9a748438ae77018b013}{agregarLibro}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_libro}{Libro}}\&\ libro);\ \textcolor{comment}{//Done}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_biblioteca_aa32b58bc35c2cfd67406646319f9b829}{eliminarLibro}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_libro}{Libro}}\&\ ISBN);\ \textcolor{comment}{//}}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_biblioteca_a7cf49388843a6a9646d210e6c70d39ae}{mostrarLibros}}()\ \textcolor{keyword}{const};\ \ \textcolor{comment}{//Done}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_libro}{Libro}}*\ \mbox{\hyperlink{class_biblioteca_a87ccccb5585943bde0a9815ebf0da685}{buscarLibroTitulo}}(\textcolor{keyword}{const}\ std::string\&\ titulo);\ \ \textcolor{comment}{//Done}}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_libro}{Libro}}*\ \mbox{\hyperlink{class_biblioteca_afad863bd0e82ce559eb724ceb28b01e2}{buscarLibroAutor}}(\textcolor{keyword}{const}\ std::string\&\ autor);\ \ \textcolor{comment}{//NOTDONE}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00051\ \ \ \ \ std::vector<Libro>\ libros;}
+\DoxyCodeLine{00052\ \};}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//BIBLIOTECA\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,125 @@
+\doxysection{Libro Class Reference}
+\hypertarget{class_libro}{}\label{class_libro}\index{Libro@{Libro}}
+
+
+Representa un libro en la biblioteca.  
+
+
+
+
+{\ttfamily \#include $<$Libro.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_libro_af792b74c5b8cc2367b80c4a0b2aa8b62}{Libro}} (std\+::string t, std\+::string a, std\+::string i)
+\begin{DoxyCompactList}\small\item\em Constructor para crear un libro nuevo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_libro_aab09096d3a843a13600b15c903442422}{mostrar\+Info}} () const
+\begin{DoxyCompactList}\small\item\em Muestra información básica del libro. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_libro_a4374f22ee86c3d87a0de0b8fca3667e0}{esta\+Disponible}} () const
+\begin{DoxyCompactList}\small\item\em Indica si el libro está disponible. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_libro_a4be8b60635108ec2449ad46d6fbde077}{get\+Titulo}} () const
+\begin{DoxyCompactList}\small\item\em Muestra el título del libro. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_libro_aa7d403f1e17e63d46fbcd634b7aa8c52}{get\+Autor}} () const
+\begin{DoxyCompactList}\small\item\em Muestra el autor del libro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Representa un libro en la biblioteca. 
+
+Esta clase almacena los datos básicos de un libro\+: título, autor, ISBN y si está disponible para préstamo. 
+
+\label{doc-constructors}
+\Hypertarget{class_libro_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_libro_af792b74c5b8cc2367b80c4a0b2aa8b62}\index{Libro@{Libro}!Libro@{Libro}}
+\index{Libro@{Libro}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{Libro()}{Libro()}}
+{\footnotesize\ttfamily \label{class_libro_af792b74c5b8cc2367b80c4a0b2aa8b62} 
+Libro\+::\+Libro (\begin{DoxyParamCaption}\item[{std\+::string}]{t}{, }\item[{std\+::string}]{a}{, }\item[{std\+::string}]{i}{}\end{DoxyParamCaption})}
+
+
+
+Constructor para crear un libro nuevo. 
+
+Constructor para nuevo objeto \doxylink{class_libro}{Libro}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Título del libro. \\
+\hline
+{\em a} & Autor del libro. \\
+\hline
+{\em i} & ISBN del libro.\\
+\hline
+{\em t} & Título del libro \\
+\hline
+{\em a} & Autor del libro \\
+\hline
+{\em i} & Código ISBN del libro \\
+\hline
+\end{DoxyParams}
+
+
+\label{doc-func-members}
+\Hypertarget{class_libro_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_libro_a4374f22ee86c3d87a0de0b8fca3667e0}\index{Libro@{Libro}!estaDisponible@{estaDisponible}}
+\index{estaDisponible@{estaDisponible}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{estaDisponible()}{estaDisponible()}}
+{\footnotesize\ttfamily \label{class_libro_a4374f22ee86c3d87a0de0b8fca3667e0} 
+bool Libro\+::esta\+Disponible (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Indica si el libro está disponible. 
+
+Indica si el libro está disponible para préstamo.
+
+\begin{DoxyReturn}{Returns}
+true si disponible, false si prestado.
+
+true si está disponible, false si está prestado 
+\end{DoxyReturn}
+\Hypertarget{class_libro_aa7d403f1e17e63d46fbcd634b7aa8c52}\index{Libro@{Libro}!getAutor@{getAutor}}
+\index{getAutor@{getAutor}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{getAutor()}{getAutor()}}
+{\footnotesize\ttfamily \label{class_libro_aa7d403f1e17e63d46fbcd634b7aa8c52} 
+std\+::string Libro\+::get\+Autor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra el autor del libro. 
+
+\begin{DoxyReturn}{Returns}
+autor 
+\end{DoxyReturn}
+\Hypertarget{class_libro_a4be8b60635108ec2449ad46d6fbde077}\index{Libro@{Libro}!getTitulo@{getTitulo}}
+\index{getTitulo@{getTitulo}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{getTitulo()}{getTitulo()}}
+{\footnotesize\ttfamily \label{class_libro_a4be8b60635108ec2449ad46d6fbde077} 
+std\+::string Libro\+::get\+Titulo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra el título del libro. 
+
+\begin{DoxyReturn}{Returns}
+titulo 
+\end{DoxyReturn}
+\Hypertarget{class_libro_aab09096d3a843a13600b15c903442422}\index{Libro@{Libro}!mostrarInfo@{mostrarInfo}}
+\index{mostrarInfo@{mostrarInfo}!Libro@{Libro}}
+\doxysubsubsection{\texorpdfstring{mostrarInfo()}{mostrarInfo()}}
+{\footnotesize\ttfamily \label{class_libro_aab09096d3a843a13600b15c903442422} 
+void Libro\+::mostrar\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Muestra información básica del libro. 
+
+Muestra la información básica del libro. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_libro_8h}{Libro.\+h}}\item 
+src/\mbox{\hyperlink{libro_8cpp}{libro.\+cpp}}\end{DoxyCompactItemize}

@@ -16,6 +16,13 @@ Biblioteca::Biblioteca(){}
 void Biblioteca::agregarLibro(const Libro& libro){
     libros.push_back(libro);
 }
+/**
+ * @brief Elimina un libro de la biblioteca.
+ * @param ISBN Codigo ISBN del libro a eliminar.
+ */
+void Biblioteca::eliminarLibro(const Libro& libro){
+    //Construir esto??
+}
 
 /**
  * @brief Muestra los libros en la biblioteca.

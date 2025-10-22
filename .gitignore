@@ -1,2 +1,13 @@
 # Ignorar configuración de VSCode
 .vscode/
+# Directorio de compilación
+build/
+
+# Archivos temporales e IDEs
+*.o
+*.obj
+*.exe
+*.log
+*.user
+*.vcxproj*
+*.sln

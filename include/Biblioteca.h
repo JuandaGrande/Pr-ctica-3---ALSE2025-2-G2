@@ -23,6 +23,11 @@ class Biblioteca{
      */
     void agregarLibro(const Libro& libro); //Done
     /**
+     * @brief Elimina un libro de la biblioteca.
+     * @param ISBN ISBN del ibro a eliminar.
+     */
+    void eliminarLibro(const Libro& ISBN); //
+    /**
      * @brief Muestra todos los libros en la biblioteca.
      */
     void mostrarLibros() const;  //Done
